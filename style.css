@@ -7,7 +7,7 @@
   --pastel-blue: #A0C3DF;
   --sky-blue: #C7DDEC;
   --deep-blue: #0F1E2E;
-  --mid-blue: #1F3A4E;
+  --mid-blue: #3d6482;
   --ink: #1F2C38;
   --line: rgba(15, 30, 46, 0.08);
   --shadow: rgba(15, 30, 46, 0.10);
@@ -1285,4 +1285,177 @@ h2 {
   .before-after-arrow { transform: rotate(90deg); }
   .cover-title-row { font-size: 2.8rem; }
   .cover-title-em { font-size: 3.5rem; }
+}/* ============================================================
+   BOLINHAS ROXAS - APOIA HOJE
+   ============================================================ */
+.proj-apoiahoje--roxo .proj-list li::before {
+  background: #7A4A88;
+}
+.proj-apoiahoje--roxo .proj-list li::before {
+  background: #7A4A88;
+}
+/* ============================================================
+   "O QUE APRENDI" - APOIA HOJE (verde e roxo)
+   ============================================================ */
+.proj-apoiahoje .learned-card {
+  background: linear-gradient(155deg, #3D7663 0%, #7A4A88 100%);
+}
+.proj-apoiahoje .learned-badge {
+  background: #FFFFFF; /* ou #3D7663 para verde */
+}
+/* ============================================================
+   LEGENDAS NAS IMAGENS
+   ============================================================ */
+.img-legend {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  padding: 4px 14px;
+  border-radius: 20px;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.imgph:hover .img-legend {
+  opacity: 1;
+}
+
+/* Legendas para as fotos pessoais (Sobre mim e Contacto) */
+.photo-legend {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  padding: 3px 12px;
+  border-radius: 20px;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+}
+
+.photo-card:hover .photo-legend {
+  opacity: 1;
+}
+
+/* Para a tira de linear (já tem legenda inline, mas ajustamos) */
+.imgph-strip .img-legend {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  font-size: 0.7rem;
+  padding: 4px 14px;
+  border-radius: 20px;
+  opacity: 0.9; /* aparece sempre na tira porque é mais difícil ver */
+}
+
+/* No mobile, as legendas podem ficar sempre visíveis */
+@media (max-width: 860px) {
+  .img-legend,
+  .photo-legend {
+    opacity: 0.9;
+    font-size: 0.55rem;
+    padding: 3px 10px;
+    bottom: 6px;
+  }
+}
+/* ============================================================
+   NEXI - CORES DO LOGÓTIPO (lilás e verde água)
+   ============================================================ */
+.proj-nexi .proj-block h3 {
+  color: #7F88E5 !important; /* lilás */
+}
+
+.proj-nexi .proj-list li::before {
+  background: #ADE0D3 !important; /* verde água */
+}
+/* ============================================================
+   NEXI - "O QUE APRENDI" (verde água e lilás)
+   ============================================================ */
+.proj-nexi .learned-card {
+  background: linear-gradient(155deg, #7F88E5 0%, #ADE0D3 100%) !important;
+}
+
+/* Opcional: ajustar a cor do badge (traço) para combinar */
+.proj-nexi .learned-badge {
+  background: #ffffff !important;
+}
+background: linear-gradient(155deg, #ADE0D3 0%, #7F88E5 100%) !important;
+/* ============================================================
+   CONTACTO - 3 FOTOS
+   ============================================================ */
+.contact-photos--3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+  min-height: 320px;
+  align-items: stretch;
+}
+
+.contact-photos--3 .photo-card {
+  width: 100% !important;
+  aspect-ratio: 3 / 4;
+  border: 6px solid var(--cream);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 20px 40px -20px rgba(15,30,46,0.3);
+  position: relative;
+}
+
+.contact-photos--3 .photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Remover posições absolutas que já não são necessárias */
+.contact .contact-photos--3 .photo-card {
+  position: relative;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+}
+
+/* Responsivo: em mobile, 1 coluna */
+@media (max-width: 860px) {
+  .contact-photos--3 {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .contact-photos--3 .photo-card:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-photos--3 {
+    grid-template-columns: 1fr;
+  }
+  .contact-photos--3 .photo-card:last-child {
+    grid-column: auto;
+  }
+}
+/* Aumentar largura do mockup */
+.nexi-identity .imgph:first-child {
+  max-width: 100%;
 }
