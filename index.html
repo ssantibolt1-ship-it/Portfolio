@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Marketing Portfolio — Rita</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&family=Shrikhand&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -161,9 +161,8 @@
         </div>
       </div>
       <div class="project-col project-col--visual">
-        <!-- Logótipo -->
-        <div class="imgph imgph-logo" style="aspect-ratio:4/3;">
-          <img src="apoiahoje.png" alt="Logótipo Apoia Hoje" style="width:100%; height:100%; object-fit:contain;">
+        <div class="imgph imgph-logo" style="padding:0.5rem;">
+          <img src="apoiahoje.png" alt="Logótipo Apoia Hoje" style="width:100%; height:auto; max-height:220px; object-fit:contain;">
         </div>
         <div class="identity-row">
           <div class="identity-block">
@@ -176,9 +175,13 @@
           </div>
           <div class="identity-block">
             <h4>Tipografia</h4>
-            <div class="imgph imgph-type" style="aspect-ratio:5/1.2; background: transparent; border: none; padding: 0; display: flex; align-items: center; justify-content: center; background: #f5f0e8; border-radius: 4px;">
-              <span style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 500; letter-spacing: 0.02em; color: #1A2A3A;">
-                Aa Bb Cc · 123
+            <div class="imgph imgph-type" style="background: #f5f0e8; border-radius: 4px; padding: 0.8rem 1.5rem; display: flex; align-items: center; justify-content: center; gap: 0.8rem; flex-wrap: wrap;">
+              <span style="font-family: 'Jost', sans-serif; font-size: 1rem; letter-spacing: 0.08em; color: var(--deep-blue); font-weight: 400;">
+                Shrikhand Regular
+              </span>
+              <span style="font-family: 'Jost', sans-serif; font-size: 1.2rem; color: var(--deep-blue); opacity: 0.5;">—</span>
+              <span style="font-family: 'Shrikhand', cursive; font-size: 2rem; color: var(--deep-blue); letter-spacing: 0.02em;">
+                Apoia Hoje
               </span>
             </div>
           </div>
@@ -204,14 +207,14 @@
       <p class="proj-sub">A identidade criada foi aplicada em diferentes materiais de comunicação com o objetivo de garantir coerência visual e reforçar a mensagem da campanha.</p>
     </div>
     <div class="applications-grid">
-      <div class="imgph" style="aspect-ratio:3/4;">
-        <img src="desdobravel .png" alt="Desdobrável Apoia Hoje" style="width:100%; height:100%; object-fit:cover;">
+      <div class="imgph" style="padding:0.3rem;">
+        <img src="desdobravel .png" alt="Desdobrável Apoia Hoje" style="width:100%; height:auto; max-height:400px; object-fit:contain;">
       </div>
-      <div class="imgph" style="aspect-ratio:3/4;">
-        <img src="cartazapoia.png" alt="Cartaz Apoia Hoje" style="width:100%; height:100%; object-fit:cover;">
+      <div class="imgph" style="padding:0.3rem;">
+        <img src="cartazapoia.png" alt="Cartaz Apoia Hoje" style="width:100%; height:auto; max-height:400px; object-fit:contain;">
       </div>
-      <div class="imgph" style="aspect-ratio:3/4;">
-        <img src="mokups.png" alt="Mockups Apoia Hoje" style="width:100%; height:100%; object-fit:cover;">
+      <div class="imgph" style="padding:0.3rem;">
+        <img src="mokups.png" alt="Mockups Apoia Hoje" style="width:100%; height:auto; max-height:400px; object-fit:contain;">
       </div>
     </div>
     <div class="learned-card">
@@ -221,12 +224,12 @@
     </div>
   </section>
 
-  <!-- NIVEA SUN - APRESENTAÇÃO (com texto da campanha) -->
+  <!-- NIVEA SUN - APRESENTAÇÃO (IMAGEM MAIOR, TÍTULO NORMAL) -->
   <section id="niveasun-01" class="page project proj-niveasun" data-index="07">
     <span class="ghost-numeral" aria-hidden="true">06</span>
     <div class="project-head">
       <span class="proj-index">Projeto 02</span>
-      <h2 class="proj-title">Nivea Sun</h2>
+      <h2 class="proj-title">Nivea Sun</h2> <!-- TÍTULO VOLTOU AO NORMAL -->
       <p class="proj-sub">Campanha de Marketing</p>
     </div>
     <div class="project-body">
@@ -260,8 +263,9 @@
         </div>
       </div>
       <div class="project-col project-col--visual">
-        <div class="imgph imgph-logo" style="aspect-ratio:3/4;">
-          <img src="imagemnivia.png" alt="Produto Nivea Sun" style="width:100%; height:100%; object-fit:contain;">
+        <!-- IMAGEM DO PRODUTO COM max-height MAIOR (420px) -->
+        <div class="imgph imgph-logo" style="padding:0.5rem;">
+          <img src="imagemnivia.png" alt="Produto Nivea Sun" style="width:100%; height:auto; max-height:420px; object-fit:contain;">
         </div>
         <div class="identity-block">
           <h4>Ferramentas utilizadas</h4>
@@ -275,22 +279,22 @@
     </div>
   </section>
 
-  <!-- NIVEA SUN - APLICAÇÕES (sem stopper) -->
+  <!-- NIVEA SUN - APLICAÇÕES (tira sem moldura) -->
   <section id="niveasun-02" class="page project proj-niveasun" data-index="08">
     <span class="ghost-numeral" aria-hidden="true">07</span>
     <div class="project-head project-head--sm">
       <span class="proj-index">Projeto 02 — Nivea Sun</span>
       <h2 class="proj-title proj-title--sm">Aplicação da Campanha</h2>
     </div>
-    <div class="applications-grid applications-grid--3">
-      <div class="imgph" style="aspect-ratio:3/4;">
-        <img src="mupis.png" alt="MUPI Nivea Sun" style="width:100%; height:100%; object-fit:cover;">
+    <div class="applications-grid applications-grid--nivea" style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem;">
+      <div class="imgph" style="padding:0.3rem;">
+        <img src="mupis2.png" alt="MUPI Nivea Sun" style="width:100%; height:auto; max-height:400px; object-fit:contain;">
       </div>
-      <div class="imgph" style="aspect-ratio:3/4;">
-        <img src="folheto.png" alt="Folheto Nivea Sun" style="width:100%; height:100%; object-fit:cover;">
+      <div class="imgph" style="padding:0.3rem;">
+        <img src="folheto.png" alt="Folheto Nivea Sun" style="width:100%; height:auto; max-height:400px; object-fit:contain;">
       </div>
-      <div class="imgph" style="aspect-ratio:3/4;">
-        <img src="tiralinear.png" alt="Tira de Linear Nivea Sun" style="width:100%; height:100%; object-fit:cover;">
+      <div class="imgph imgph-strip" style="grid-column: 1 / -1; padding:0; background:transparent; border:none; box-shadow:none; aspect-ratio:16/5; min-height:100px;">
+        <img src="tiralinear.png" alt="Tira de Linear Nivea Sun" style="width:100%; height:150%; object-fit:contain; display:block; border-radius:0;">
       </div>
     </div>
     <div class="learned-card">
@@ -310,8 +314,8 @@
     </div>
     <div class="project-body project-body--reverse">
       <div class="project-col project-col--visual">
-        <div class="imgph imgph-screen" style="aspect-ratio:16/9; min-height:380px;">
-          <img src="website nexi.png" alt="Website Nexi Homepage" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+        <div class="imgph imgph-screen" style="padding:0.3rem;">
+          <img src="website nexi.png" alt="Website Nexi Homepage" style="width:100%; height:auto; max-height:500px; object-fit:contain; border-radius:4px;">
         </div>
       </div>
       <div class="project-col project-col--text">
@@ -341,7 +345,7 @@
     </div>
   </section>
 
-  <!-- NEXI - IDENTIDADE + WEBSITE (COM TAMANHOS MAIORES) -->
+  <!-- NEXI - IDENTIDADE + WEBSITE (IMAGENS MAIORES - max-height 550px) -->
   <section id="nexi-02" class="page project proj-nexi" data-index="10">
     <span class="ghost-numeral" aria-hidden="true">09</span>
     <div class="project-head project-head--sm">
@@ -352,11 +356,11 @@
       <div class="nexi-identity">
         <h4>Identidade visual</h4>
         <div class="nexi-identity-row">
-          <div class="imgph" style="aspect-ratio:3/4; min-height:380px;">
-            <img src="logotiponexi.png" alt="Logótipo Nexi" style="width:100%; height:100%; object-fit:contain;">
+          <div class="imgph" style="padding:0.3rem;">
+            <img src="logotiponexi.png" alt="Logótipo Nexi" style="width:100%; height:auto; max-height:550px; object-fit:contain;">
           </div>
-          <div class="imgph" style="aspect-ratio:3/4; min-height:380px;">
-            <img src="favicon.png" alt="Favicon Nexi" style="width:100%; height:100%; object-fit:contain;">
+          <div class="imgph" style="padding:0.3rem;">
+            <img src="favicon.png" alt="Favicon Nexi" style="width:100%; height:auto; max-height:550px; object-fit:contain;">
           </div>
         </div>
         <div class="identity-block">
@@ -371,18 +375,18 @@
       <div class="nexi-website">
         <h4>Website</h4>
         <div class="applications-grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-          <div class="imgph imgph-screen" style="aspect-ratio:16/9; min-height:340px;">
-            <img src="website nexi.png" alt="Homepage Nexi" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          <div class="imgph imgph-screen" style="padding:0.3rem;">
+            <img src="website nexi.png" alt="Homepage Nexi" style="width:100%; height:auto; max-height:550px; object-fit:contain; border-radius:4px;">
           </div>
-          <div class="imgph imgph-screen" style="aspect-ratio:16/9; min-height:340px;">
-            <img src="websitebeneficios.png" alt="Página interior Nexi" style="width:100%; height:100%; object-fit:cover; object-position:top;">
+          <div class="imgph imgph-screen" style="padding:0.3rem;">
+            <img src="websitebeneficios.png" alt="Página interior Nexi" style="width:100%; height:auto; max-height:550px; object-fit:contain; border-radius:4px;">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NEXI - CONTEÚDOS DIGITAIS + EDIÇÃO (COM TAMANHOS MAIORES) -->
+  <!-- NEXI - CONTEÚDOS DIGITAIS + EDIÇÃO (IMAGENS MAIORES - max-height 550px) -->
   <section id="nexi-03" class="page project proj-nexi" data-index="11">
     <span class="ghost-numeral" aria-hidden="true">10</span>
     <div class="project-head project-head--sm">
@@ -393,23 +397,23 @@
       <div class="nexi-identity">
         <h4>Conteúdos digitais</h4>
         <div class="applications-grid" style="grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-          <div class="imgph" style="aspect-ratio:3/4; min-height:380px;">
-            <img src="conteudosdigitais.png" alt="Mockup Rede Social 1 Nexi" style="width:100%; height:100%; object-fit:cover;">
+          <div class="imgph" style="padding:0.3rem;">
+            <img src="conteudosdigitais.png" alt="Mockup Rede Social 1 Nexi" style="width:100%; height:auto; max-height:550px; object-fit:contain;">
           </div>
-          <div class="imgph" style="aspect-ratio:3/4; min-height:380px;">
-            <img src="mockup-social2-nexi.jpg" alt="Mockup Rede Social 2 Nexi" style="width:100%; height:100%; object-fit:cover;">
+          <div class="imgph" style="padding:0.3rem;">
+            <img src="mockup-social2-nexi.jpg" alt="Mockup Rede Social 2 Nexi" style="width:100%; height:auto; max-height:550px; object-fit:contain;">
           </div>
         </div>
       </div>
       <div class="nexi-website">
         <h4>Edição de imagem</h4>
         <div class="before-after" style="grid-template-columns: 1fr auto 1fr; gap: 1rem;">
-          <div class="imgph" style="aspect-ratio:3/4; min-height:340px;">
-            <img src="edicaoantes.png" alt="Antes da edição" style="width:100%; height:100%; object-fit:cover;">
+          <div class="imgph" style="padding:0.3rem;">
+            <img src="edicaoantes.png" alt="Antes da edição" style="width:100%; height:auto; max-height:550px; object-fit:contain;">
           </div>
           <div class="before-after-arrow" aria-hidden="true">→</div>
-          <div class="imgph" style="aspect-ratio:3/4; min-height:340px;">
-            <img src="edicaodepois.png" alt="Depois da edição" style="width:100%; height:100%; object-fit:cover;">
+          <div class="imgph" style="padding:0.3rem;">
+            <img src="edicaodepois.png" alt="Depois da edição" style="width:100%; height:auto; max-height:550px; object-fit:contain;">
           </div>
         </div>
       </div>
@@ -433,27 +437,31 @@
         <ul class="contact-list">
           <li>
             <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-            <span>+351 000 000 000</span>
+            <span>+351 964 337 838</span>
           </li>
           <li>
             <span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
-            <span>oteu.email@exemplo.com</span>
+            <span>anaritamagalhaes.06@gmail.com</span>
           </li>
         </ul>
+        <div class="photo-card contact-photo-accent">
+          <img src="IMG_0369.jpeg" alt="Fotografia de Rita">
+        </div>
       </div>
       <div class="contact-photos">
         <div class="photo-card contact-photo-main">
-          <img src="foto-contacto-principal.jpg" alt="Fotografia de Rita">
+          <img src="IMG_0371.jpeg" alt="Fotografia de Rita">
         </div>
-        <div class="photo-card contact-photo-accent">
-          <img src="foto-contacto-secundaria.jpg" alt="Fotografia de Rita">
-        </div>
-        <span class="tag contact-tag">Obrigada pela visita ✦</span>
-      </div>
     </div>
   </section>
 
 </main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true" style="display:none;">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Fechar imagem">✕</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Imagem ampliada">
+</div>
 
 <script src="script.js"></script>
 </body>
