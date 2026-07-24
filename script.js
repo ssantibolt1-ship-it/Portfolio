@@ -72,10 +72,10 @@ if (dotCursor && ring) {
   const interactive = document.querySelectorAll('a, button, .dot, .photo-card, .imgph, .tools-grid li');
   interactive.forEach(el => {
     el.addEventListener('mouseenter', () => {
-      ring.style.transform = `scale(1.7)`;
+      ring.classList.add('hover');
     });
     el.addEventListener('mouseleave', () => {
-      ring.style.transform = `scale(1)`;
+      ring.classList.remove('hover');
     });
   });
 }
@@ -87,4 +87,43 @@ document.querySelectorAll('.dot').forEach(dot => {
     const target = document.querySelector(dot.getAttribute('href'));
     if (target) target.scrollIntoView({ behavior: 'smooth' });
   });
+});
+
+// ---------- LIGHTBOX ----------
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const closeBtn = document.getElementById('lightbox-close');
+
+document.querySelectorAll('.imgph img').forEach(img => {
+  img.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const src = img.getAttribute('src');
+    if (src && !src.includes('tipografia')) {
+      lightboxImg.src = src;
+      lightbox.classList.add('show');
+      lightbox.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('show');
+  lightbox.style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox || e.target === lightboxImg) {
+    closeLightbox();
+  }
+});
+
+closeBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
 });
